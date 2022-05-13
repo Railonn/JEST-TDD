@@ -1,18 +1,14 @@
-class ConvertirNombre {
+export function arabicToRoman(number) {
+    let roman = "";
 
-    arabicToRoman(number) {
-        let roman = "";
-
-        while (number >= 10) {
-            roman += "X";
-            number -= 10;
-        }
-
-        while (number-- > 0) {
-            roman += "I";
-        }
-
-        return roman;
+    while (number >= 10) {
+        roman += "X";
+        number -= 10;
     }
 
+    while (number-- > 0) {
+        roman += "I";
+    }
+
+    return roman;
 }
