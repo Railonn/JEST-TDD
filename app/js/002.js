@@ -1,13 +1,13 @@
-arabicDigits = [10, 5, 1];
-romansDigits = ["X", "V", "I"];
+const arabicDigits = [10, 5, 1];
+const romansDigits = ["X", "V", "I"];
 
 export function arabicToRoman(number) {
     let roman = "";
 
-    for (let index = 0; index < this.arabicDigits.length; index++) {
-        while (number >= this.arabicDigits[index]) {
-            roman += this.romansDigits[index];
-            number -= this.arabicDigits[index];
+    for (let index = 0; index < arabicDigits.length; index++) {
+        while (number >= arabicDigits[index]) {
+            roman += romansDigits[index];
+            number -= arabicDigits[index];
         }
     }
 

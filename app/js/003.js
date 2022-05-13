@@ -1,5 +1,5 @@
-arabicDigits = [1000, 500, 100, 50, 10, 5, 1];
-romansDigits = ["M", "D", "C", "L", "X", "V", "I"];
+const arabicDigits = [1000, 500, 100, 50, 10, 5, 1];
+const romansDigits = ["M", "D", "C", "L", "X", "V", "I"];
 
 export function arabicToRoman(number) {
     let roman = "";
@@ -12,10 +12,10 @@ export function arabicToRoman(number) {
         return "";
     }
 
-    for (let index = 0; index < this.arabicDigits.length; index++) {
-        while (number >= this.arabicDigits[index]) {
-            roman += this.romansDigits[index];
-            number -= this.arabicDigits[index];
+    for (let index = 0; index < arabicDigits.length; index++) {
+        while (number >= arabicDigits[index]) {
+            roman += romansDigits[index];
+            number -= arabicDigits[index];
         }
     }
 

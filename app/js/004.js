@@ -1,4 +1,4 @@
-romanNumberMap = {
+const romanNumberMap = {
     'M': 1000,
     'CM': 900,
     'D': 500,
@@ -26,7 +26,7 @@ export function arabicToRoman(number) {
 
     let result = "";
 
-    for (const [key, value] of Object.entries(this.romanNumberMap)) {
+    for (const [key, value] of Object.entries(romanNumberMap)) {
         while (value <= number) {
             result += key;
             number -= value;
