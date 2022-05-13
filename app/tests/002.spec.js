@@ -1,4 +1,4 @@
-import { ConvertirNombre } from '../ts/002';
+import { ConvertirNombre } from '../js/002';
 
 describe(' ', () => {
 
