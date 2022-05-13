@@ -16,5 +16,3 @@ class ConvertirNombre {
     }
 
 }
-
-module.exports(ConvertirNombre);
