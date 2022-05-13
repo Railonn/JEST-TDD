@@ -1,4 +1,4 @@
-export class ConvertirNombre {
+class ConvertirNombre {
 
     romanNumberMap = {
         'M': 1000,
@@ -39,3 +39,5 @@ export class ConvertirNombre {
     }
 
 }
+
+module.exports(ConvertirNombre);

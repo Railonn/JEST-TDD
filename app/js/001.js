@@ -1,4 +1,4 @@
-export class ConvertirNombre {
+class ConvertirNombre {
 
     arabicToRoman(number) {
         let roman = "";
@@ -16,3 +16,5 @@ export class ConvertirNombre {
     }
 
 }
+
+module.exports(ConvertirNombre);

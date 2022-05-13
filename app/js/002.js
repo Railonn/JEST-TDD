@@ -1,4 +1,4 @@
-export class ConvertirNombre {
+class ConvertirNombre {
 
     arabicDigits = [10, 5, 1];
     romansDigits = ["X", "V", "I"];
@@ -17,3 +17,5 @@ export class ConvertirNombre {
     }
 
 }
+
+module.exports(ConvertirNombre);
